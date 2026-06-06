@@ -1,0 +1,464 @@
+{
+  "tier": "tier1",
+  "seed": 62,
+  "theoretical_energy": {
+    "tier": "tier1",
+    "seed": 62,
+    "metric_name": "Theoretical energy (45nm neuromorphic, pJ per sample)",
+    "mac_energy_pj": 4.6,
+    "ac_energy_pj": 0.9,
+    "seq_len": 256,
+    "hidden_dim": 768,
+    "intermediate_dim": 3072,
+    "num_layers": 12,
+    "snn_report_timesteps": 4,
+    "snn_forward_activity_counts": {
+      "8": 1,
+      "9": 1,
+      "10": 1,
+      "11": 1
+    },
+    "student_mean_firing_rate": 0.30859690105119336,
+    "firing_rate_warning": null,
+    "attention_flops_formula": "seq_len * hidden_dim * hidden_dim * 4, projection-only approximation",
+    "ffn_flops_formula": "seq_len * (hidden_dim * intermediate_dim + intermediate_dim * hidden_dim)",
+    "teacher_total_energy_pj_per_sample": 100019061504.00002,
+    "student_total_energy_pj_per_sample": 83160530817.73038,
+    "student_teacher_theoretical_energy_ratio": 0.8314468219080877,
+    "teacher_student_theoretical_saving_ratio": 1.2027227402290137,
+    "teacher_layers": [
+      {
+        "name": "embedding_lookup_proxy",
+        "kind": "embedding_lookup_not_counted_as_mac",
+        "ops_proxy": 196608,
+        "energy_pj": 0.0,
+        "note": "Embedding lookup is not counted as dense MAC energy."
+      },
+      {
+        "name": "layer_0_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6
+      },
+      {
+        "name": "layer_0_ffn",
+        "kind": "ANN_FFN_MAC",
+        "flops": 1207959552,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 5556613939.2
+      },
+      {
+        "name": "layer_1_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6
+      },
+      {
+        "name": "layer_1_ffn",
+        "kind": "ANN_FFN_MAC",
+        "flops": 1207959552,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 5556613939.2
+      },
+      {
+        "name": "layer_2_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6
+      },
+      {
+        "name": "layer_2_ffn",
+        "kind": "ANN_FFN_MAC",
+        "flops": 1207959552,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 5556613939.2
+      },
+      {
+        "name": "layer_3_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6
+      },
+      {
+        "name": "layer_3_ffn",
+        "kind": "ANN_FFN_MAC",
+        "flops": 1207959552,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 5556613939.2
+      },
+      {
+        "name": "layer_4_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6
+      },
+      {
+        "name": "layer_4_ffn",
+        "kind": "ANN_FFN_MAC",
+        "flops": 1207959552,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 5556613939.2
+      },
+      {
+        "name": "layer_5_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6
+      },
+      {
+        "name": "layer_5_ffn",
+        "kind": "ANN_FFN_MAC",
+        "flops": 1207959552,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 5556613939.2
+      },
+      {
+        "name": "layer_6_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6
+      },
+      {
+        "name": "layer_6_ffn",
+        "kind": "ANN_FFN_MAC",
+        "flops": 1207959552,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 5556613939.2
+      },
+      {
+        "name": "layer_7_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6
+      },
+      {
+        "name": "layer_7_ffn",
+        "kind": "ANN_FFN_MAC",
+        "flops": 1207959552,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 5556613939.2
+      },
+      {
+        "name": "layer_8_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6
+      },
+      {
+        "name": "layer_8_ffn",
+        "kind": "ANN_FFN_MAC",
+        "flops": 1207959552,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 5556613939.2
+      },
+      {
+        "name": "layer_9_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6
+      },
+      {
+        "name": "layer_9_ffn",
+        "kind": "ANN_FFN_MAC",
+        "flops": 1207959552,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 5556613939.2
+      },
+      {
+        "name": "layer_10_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6
+      },
+      {
+        "name": "layer_10_ffn",
+        "kind": "ANN_FFN_MAC",
+        "flops": 1207959552,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 5556613939.2
+      },
+      {
+        "name": "layer_11_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6
+      },
+      {
+        "name": "layer_11_ffn",
+        "kind": "ANN_FFN_MAC",
+        "flops": 1207959552,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 5556613939.2
+      },
+      {
+        "name": "classifier_head",
+        "kind": "ANN_classifier_MAC",
+        "flops": 2304,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 10598.4
+      }
+    ],
+    "student_layers": [
+      {
+        "name": "embedding_lookup_proxy",
+        "kind": "embedding_lookup_not_counted_as_mac",
+        "ops_proxy": 196608,
+        "energy_pj": 0.0,
+        "note": "Embedding lookup is not counted as dense MAC energy."
+      },
+      {
+        "name": "layer_0_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6,
+        "note": "Self-attention remains ANN in the current hybrid architecture."
+      },
+      {
+        "name": "layer_0_ffn",
+        "kind": "ANN_FFN_MAC",
+        "flops": 1207959552,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 5556613939.2
+      },
+      {
+        "name": "layer_1_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6,
+        "note": "Self-attention remains ANN in the current hybrid architecture."
+      },
+      {
+        "name": "layer_1_ffn",
+        "kind": "ANN_FFN_MAC",
+        "flops": 1207959552,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 5556613939.2
+      },
+      {
+        "name": "layer_2_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6,
+        "note": "Self-attention remains ANN in the current hybrid architecture."
+      },
+      {
+        "name": "layer_2_ffn",
+        "kind": "ANN_FFN_MAC",
+        "flops": 1207959552,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 5556613939.2
+      },
+      {
+        "name": "layer_3_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6,
+        "note": "Self-attention remains ANN in the current hybrid architecture."
+      },
+      {
+        "name": "layer_3_ffn",
+        "kind": "ANN_FFN_MAC",
+        "flops": 1207959552,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 5556613939.2
+      },
+      {
+        "name": "layer_4_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6,
+        "note": "Self-attention remains ANN in the current hybrid architecture."
+      },
+      {
+        "name": "layer_4_ffn",
+        "kind": "ANN_FFN_MAC",
+        "flops": 1207959552,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 5556613939.2
+      },
+      {
+        "name": "layer_5_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6,
+        "note": "Self-attention remains ANN in the current hybrid architecture."
+      },
+      {
+        "name": "layer_5_ffn",
+        "kind": "ANN_FFN_MAC",
+        "flops": 1207959552,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 5556613939.2
+      },
+      {
+        "name": "layer_6_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6,
+        "note": "Self-attention remains ANN in the current hybrid architecture."
+      },
+      {
+        "name": "layer_6_ffn",
+        "kind": "ANN_FFN_MAC",
+        "flops": 1207959552,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 5556613939.2
+      },
+      {
+        "name": "layer_7_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6,
+        "note": "Self-attention remains ANN in the current hybrid architecture."
+      },
+      {
+        "name": "layer_7_ffn",
+        "kind": "ANN_FFN_MAC",
+        "flops": 1207959552,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 5556613939.2
+      },
+      {
+        "name": "layer_8_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6,
+        "note": "Self-attention remains ANN in the current hybrid architecture."
+      },
+      {
+        "name": "layer_8_ffn",
+        "kind": "SNN_FFN_AC",
+        "flops_equiv_ann": 1207959552,
+        "timesteps": 4,
+        "firing_rate": 0.2355410439713575,
+        "energy_per_op_pj": 0.9,
+        "energy_pj": 1024286594.231712
+      },
+      {
+        "name": "layer_9_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6,
+        "note": "Self-attention remains ANN in the current hybrid architecture."
+      },
+      {
+        "name": "layer_9_ffn",
+        "kind": "SNN_FFN_AC",
+        "flops_equiv_ann": 1207959552,
+        "timesteps": 4,
+        "firing_rate": 0.2842906960740193,
+        "energy_per_op_pj": 0.9,
+        "energy_pj": 1236281982.722426
+      },
+      {
+        "name": "layer_10_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6,
+        "note": "Self-attention remains ANN in the current hybrid architecture."
+      },
+      {
+        "name": "layer_10_ffn",
+        "kind": "SNN_FFN_AC",
+        "flops_equiv_ann": 1207959552,
+        "timesteps": 4,
+        "firing_rate": 0.33037111216481047,
+        "energy_per_op_pj": 0.9,
+        "energy_pj": 1436669786.3196464
+      },
+      {
+        "name": "layer_11_self_attention",
+        "kind": "ANN_attention_MAC",
+        "flops": 603979776,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 2778306969.6,
+        "note": "Self-attention remains ANN in the current hybrid architecture."
+      },
+      {
+        "name": "layer_11_ffn",
+        "kind": "SNN_FFN_AC",
+        "flops_equiv_ann": 1207959552,
+        "timesteps": 4,
+        "firing_rate": 0.38418475199458624,
+        "energy_per_op_pj": 0.9,
+        "energy_pj": 1670686707.2566013
+      },
+      {
+        "name": "classifier_head",
+        "kind": "ANN_classifier_MAC",
+        "flops": 2304,
+        "energy_per_op_pj": 4.6,
+        "energy_pj": 10598.4
+      }
+    ],
+    "test_metrics": {
+      "loss": 1.0845658371384923,
+      "accuracy": 0.941566645609602,
+      "f1_macro": 0.8398168531531791,
+      "f1_weighted": 0.9386175345292936,
+      "f1_per_class": [
+        0.9578651685393258,
+        0.604982206405694,
+        0.9566031845145176
+      ]
+    },
+    "note": "This is a theoretical estimate based on 45nm MAC/AC operation costs. Actual GPU energy is reported separately. Self-attention remains ANN and uses MAC cost. Only explicit SNN FFN layers use AC cost. Embedding lookup is not counted as dense MAC energy."
+  },
+  "actual_gpu_energy_a100": {
+    "teacher": {
+      "available": true,
+      "num_samples": 3166,
+      "avg_power_watts": 296.4947291666667,
+      "elapsed_seconds": 4.7745145205408335,
+      "energy_joules": 1415.6183896700718,
+      "energy_per_sample_joules": 0.44713151916300437,
+      "num_power_samples": 96,
+      "note": "This is real GPU board-power sampling via NVML during inference. On shared MPS GPUs, this may include power from other processes.",
+      "model_name": "teacher_phobert",
+      "wall_elapsed_seconds": 4.7745145205408335
+    },
+    "student": {
+      "available": true,
+      "num_samples": 3166,
+      "avg_power_watts": 285.9285966850829,
+      "elapsed_seconds": 18.12398617528379,
+      "energy_joules": 5182.165933438737,
+      "energy_per_sample_joules": 1.6368180459376933,
+      "num_power_samples": 362,
+      "note": "This is real GPU board-power sampling via NVML during inference. On shared MPS GPUs, this may include power from other processes.",
+      "model_name": "student_tier1",
+      "wall_elapsed_seconds": 18.12398617528379
+    },
+    "student_teacher_energy_per_sample_ratio": 3.6607082609646713,
+    "expected_interpretation": "The student may consume more GPU energy than the teacher because current GPU hardware does not natively accelerate spike-based event-driven computation. The theoretical energy estimate is for dedicated neuromorphic hardware."
+  },
+  "training_memory": {
+    "available": true,
+    "peak_memory_allocated_bytes": 8013767680,
+    "peak_memory_allocated_mb": 7642.5244140625,
+    "note": "Peak GPU memory allocated during training, measured by torch.cuda.max_memory_allocated(). Capture this before extra energy-measurement inference."
+  }
+}

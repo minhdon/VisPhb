@@ -1,0 +1,14 @@
+{
+  "gpu_name": "NVIDIA A100-SXM4-80GB",
+  "total_samples": 3166,
+  "elapsed_sec": 4.751230679452419,
+  "latency_per_sample_ms": 1.5007045734214843,
+  "throughput_samples_per_sec": 666.353669943233,
+  "avg_power_w": 371.98400000000004,
+  "max_power_w": 423.986,
+  "min_power_w": 328.567,
+  "num_power_samples": 204,
+  "total_energy_j": 1767.3817930654288,
+  "energy_per_sample_j": 0.5582380900396174,
+  "peak_gpu_memory_mb": 818.6162109375
+}

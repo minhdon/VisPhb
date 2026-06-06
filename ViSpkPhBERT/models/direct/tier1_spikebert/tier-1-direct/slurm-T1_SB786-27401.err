@@ -1,0 +1,104 @@
+2026-06-03 15:45:21 | INFO | Using device: cuda
+2026-06-03 15:45:21 | INFO | Config: {'seed': 52, 'epochs': 10, 'batch_size': 16, 'eval_batch_size': 32, 'spiking_layers': 4, 'output_dir': '/datastore/cndt_phungdtm/KLTN_GRIT/Nhan/uit/uit-models/tier1_spikebert/seed_52', 'teacher_ckpt': '/datastore/cndt_phungdtm/KLTN_GRIT/Nhan/uit/uit-models/phobert_vsfc/best_model.pth', 'model_name': 'vinai/phobert-base-v2', 'train_path': '/datastore/cndt_phungdtm/KLTN_GRIT/Nhan/uit/cache/train_segmented.parquet', 'dev_path': '/datastore/cndt_phungdtm/KLTN_GRIT/Nhan/uit/cache/dev_segmented.parquet', 'test_path': '/datastore/cndt_phungdtm/KLTN_GRIT/Nhan/uit/cache/test_segmented.parquet', 'max_length': 256, 'lr': 2e-05, 'weight_decay': 0.01, 'alpha': 0.3, 'temperature_kd': 4.0, 'lambda_f': 0.1, 'warmup_ratio': 0.1, 'max_grad_norm': 1.0, 'num_workers': 2, 'local_files_only': False, 'amp': True, 'spike_timesteps': 4, 'spike_threshold': 1.0, 'surrogate_alpha': 2.0}
+2026-06-03 15:45:21 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-03 15:45:21 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/vinai/phobert-base-v2/e2375d266bdf39c6e8e9a87af16a5da3190b0cc8/config.json "HTTP/1.1 200 OK"
+2026-06-03 15:45:21 | INFO | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/vinai/phobert-base-v2/e2375d266bdf39c6e8e9a87af16a5da3190b0cc8/config.json "HTTP/1.1 200 OK"
+2026-06-03 15:45:22 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/main/tokenizer_config.json "HTTP/1.1 404 Not Found"
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-06-03 15:45:22 | WARNING | Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-06-03 15:45:22 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/main/tokenizer_config.json "HTTP/1.1 404 Not Found"
+2026-06-03 15:45:22 | INFO | HTTP Request: GET https://huggingface.co/api/models/vinai/phobert-base-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-06-03 15:45:23 | INFO | HTTP Request: GET https://huggingface.co/api/models/vinai/phobert-base-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-06-03 15:45:23 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/main/vocab.txt "HTTP/1.1 307 Temporary Redirect"
+2026-06-03 15:45:23 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/vinai/phobert-base-v2/e2375d266bdf39c6e8e9a87af16a5da3190b0cc8/vocab.txt "HTTP/1.1 200 OK"
+2026-06-03 15:45:23 | INFO | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/vinai/phobert-base-v2/e2375d266bdf39c6e8e9a87af16a5da3190b0cc8/vocab.txt "HTTP/1.1 200 OK"
+2026-06-03 15:45:24 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/main/bpe.codes "HTTP/1.1 307 Temporary Redirect"
+2026-06-03 15:45:24 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/vinai/phobert-base-v2/e2375d266bdf39c6e8e9a87af16a5da3190b0cc8/bpe.codes "HTTP/1.1 200 OK"
+2026-06-03 15:45:24 | INFO | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/vinai/phobert-base-v2/e2375d266bdf39c6e8e9a87af16a5da3190b0cc8/bpe.codes "HTTP/1.1 200 OK"
+2026-06-03 15:45:24 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/main/added_tokens.json "HTTP/1.1 404 Not Found"
+2026-06-03 15:45:25 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/main/special_tokens_map.json "HTTP/1.1 404 Not Found"
+2026-06-03 15:45:25 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/main/tokenizer.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-03 15:45:25 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/vinai/phobert-base-v2/e2375d266bdf39c6e8e9a87af16a5da3190b0cc8/tokenizer.json "HTTP/1.1 200 OK"
+2026-06-03 15:45:25 | INFO | HTTP Request: GET https://huggingface.co/api/resolve-cache/models/vinai/phobert-base-v2/e2375d266bdf39c6e8e9a87af16a5da3190b0cc8/tokenizer.json "HTTP/1.1 200 OK"
+2026-06-03 15:45:25 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/main/chat_template.jinja "HTTP/1.1 404 Not Found"
+2026-06-03 15:45:26 | INFO | Train size=11426 Dev size=1583 Test size=3166
+2026-06-03 15:45:26 | INFO | Train label counts: {0: 5325, 1: 458, 2: 5643}
+2026-06-03 15:45:26 | INFO | Class weights: [0.7152425646781921, 8.315866470336914, 0.6749364733695984]
+2026-06-03 15:45:26 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-03 15:45:26 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/vinai/phobert-base-v2/e2375d266bdf39c6e8e9a87af16a5da3190b0cc8/config.json "HTTP/1.1 200 OK"
+2026-06-03 15:45:26 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-06-03 15:45:27 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-03 15:45:27 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/vinai/phobert-base-v2/e2375d266bdf39c6e8e9a87af16a5da3190b0cc8/config.json "HTTP/1.1 200 OK"
+2026-06-03 15:45:27 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-06-03 15:45:27 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/main/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-06-03 15:45:28 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/main/pytorch_model.bin "HTTP/1.1 302 Found"
+2026-06-03 15:45:28 | INFO | HTTP Request: GET https://huggingface.co/api/models/vinai/phobert-base-v2/xet-read-token/e2375d266bdf39c6e8e9a87af16a5da3190b0cc8 "HTTP/1.1 200 OK"
+2026-06-03 15:45:41 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-06-03 15:45:41 | INFO | HTTP Request: GET https://huggingface.co/api/models/vinai/phobert-base-v2 "HTTP/1.1 200 OK"
+[transformers] [1mRobertaModel LOAD REPORT[0m from: vinai/phobert-base-v2
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+2026-06-03 15:45:41 | INFO | HTTP Request: GET https://huggingface.co/api/models/vinai/phobert-base-v2/commits/main "HTTP/1.1 200 OK"
+2026-06-03 15:45:42 | INFO | HTTP Request: GET https://huggingface.co/api/models/vinai/phobert-base-v2/discussions?p=0 "HTTP/1.1 200 OK"
+2026-06-03 15:45:42 | INFO | HTTP Request: GET https://huggingface.co/api/models/vinai/phobert-base-v2/commits/refs%2Fpr%2F3 "HTTP/1.1 200 OK"
+2026-06-03 15:45:42 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/refs%2Fpr%2F3/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-06-03 15:45:42 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/refs%2Fpr%2F3/model.safetensors "HTTP/1.1 302 Found"
+2026-06-03 15:45:42 | INFO | Loaded teacher checkpoint from /datastore/cndt_phungdtm/KLTN_GRIT/Nhan/uit/uit-models/phobert_vsfc/best_model.pth
+2026-06-03 15:45:42 | INFO | Teacher missing keys: []
+2026-06-03 15:45:42 | INFO | Teacher unexpected keys: []
+2026-06-03 15:45:43 | INFO | HTTP Request: GET https://huggingface.co/api/models/vinai/phobert-base-v2/xet-read-token/af5ac018e26d84d362ff74d1ea2140f201c50845 "HTTP/1.1 200 OK"
+2026-06-03 15:45:48 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-03 15:45:48 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/vinai/phobert-base-v2/e2375d266bdf39c6e8e9a87af16a5da3190b0cc8/config.json "HTTP/1.1 200 OK"
+2026-06-03 15:45:48 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-03 15:45:48 | INFO | HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/vinai/phobert-base-v2/e2375d266bdf39c6e8e9a87af16a5da3190b0cc8/config.json "HTTP/1.1 200 OK"
+2026-06-03 15:45:48 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/main/model.safetensors "HTTP/1.1 404 Not Found"
+2026-06-03 15:45:49 | INFO | HTTP Request: GET https://huggingface.co/api/models/vinai/phobert-base-v2 "HTTP/1.1 200 OK"
+[transformers] [1mRobertaModel LOAD REPORT[0m from: vinai/phobert-base-v2
+Key                       | Status     | 
+--------------------------+------------+-
+lm_head.layer_norm.weight | UNEXPECTED | 
+lm_head.layer_norm.bias   | UNEXPECTED | 
+lm_head.bias              | UNEXPECTED | 
+lm_head.dense.bias        | UNEXPECTED | 
+lm_head.dense.weight      | UNEXPECTED | 
+pooler.dense.weight       | MISSING    | 
+pooler.dense.bias         | MISSING    | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+- MISSING:	those params were newly initialized because missing from the checkpoint. Consider training on your downstream task.
+2026-06-03 15:45:49 | INFO | Spiking FFN layer indices: [8, 9, 10, 11]
+2026-06-03 15:45:49 | INFO | HTTP Request: GET https://huggingface.co/api/models/vinai/phobert-base-v2/commits/main "HTTP/1.1 200 OK"
+2026-06-03 15:45:49 | INFO | HTTP Request: GET https://huggingface.co/api/models/vinai/phobert-base-v2/discussions?p=0 "HTTP/1.1 200 OK"
+2026-06-03 15:45:49 | INFO | HTTP Request: GET https://huggingface.co/api/models/vinai/phobert-base-v2/commits/refs%2Fpr%2F3 "HTTP/1.1 200 OK"
+2026-06-03 15:45:50 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/refs%2Fpr%2F3/model.safetensors.index.json "HTTP/1.1 404 Not Found"
+2026-06-03 15:45:50 | INFO | HTTP Request: HEAD https://huggingface.co/vinai/phobert-base-v2/resolve/refs%2Fpr%2F3/model.safetensors "HTTP/1.1 302 Found"
+2026-06-03 15:53:14 | INFO | Epoch 1/10 | train_loss=1.3948 ce=0.9193 kd=1.4681 feat=0.9137 | dev_loss=1.2511 dev_acc=0.9406 dev_f1_macro=0.7807 dev_f1_weighted=0.9326 | firing_rate=0.2269
+2026-06-03 15:53:16 | INFO | Saved best checkpoint to /datastore/cndt_phungdtm/KLTN_GRIT/Nhan/uit/uit-models/tier1_spikebert/seed_52/best_tier1_seed52.pt
+2026-06-03 16:00:41 | INFO | Epoch 2/10 | train_loss=0.5755 ce=0.7576 kd=0.3989 feat=0.6902 | dev_loss=0.9873 dev_acc=0.9495 dev_f1_macro=0.8451 dev_f1_weighted=0.9463 | firing_rate=0.2555
+2026-06-03 16:00:42 | INFO | Saved best checkpoint to /datastore/cndt_phungdtm/KLTN_GRIT/Nhan/uit/uit-models/tier1_spikebert/seed_52/best_tier1_seed52.pt
+2026-06-03 16:08:06 | INFO | Epoch 3/10 | train_loss=0.4242 ce=0.5640 kd=0.2745 feat=0.6285 | dev_loss=0.8895 dev_acc=0.9406 dev_f1_macro=0.8413 dev_f1_weighted=0.9396 | firing_rate=0.2594
+2026-06-03 16:15:31 | INFO | Epoch 4/10 | train_loss=0.3035 ce=0.4061 kd=0.1761 feat=0.5844 | dev_loss=0.8593 dev_acc=0.9444 dev_f1_macro=0.8573 dev_f1_weighted=0.9436 | firing_rate=0.2384
+2026-06-03 16:15:33 | INFO | Saved best checkpoint to /datastore/cndt_phungdtm/KLTN_GRIT/Nhan/uit/uit-models/tier1_spikebert/seed_52/best_tier1_seed52.pt
+2026-06-03 16:22:58 | INFO | Epoch 5/10 | train_loss=0.2412 ce=0.3275 kd=0.1248 feat=0.5564 | dev_loss=0.8591 dev_acc=0.9526 dev_f1_macro=0.8717 dev_f1_weighted=0.9508 | firing_rate=0.2628
+2026-06-03 16:23:00 | INFO | Saved best checkpoint to /datastore/cndt_phungdtm/KLTN_GRIT/Nhan/uit/uit-models/tier1_spikebert/seed_52/best_tier1_seed52.pt
+2026-06-03 16:30:24 | INFO | Epoch 6/10 | train_loss=0.1900 ce=0.2528 kd=0.0867 feat=0.5341 | dev_loss=0.7676 dev_acc=0.9507 dev_f1_macro=0.8705 dev_f1_weighted=0.9499 | firing_rate=0.2630
+2026-06-03 16:37:50 | INFO | Epoch 7/10 | train_loss=0.1683 ce=0.2251 kd=0.0700 feat=0.5180 | dev_loss=0.8253 dev_acc=0.9495 dev_f1_macro=0.8616 dev_f1_weighted=0.9477 | firing_rate=0.2569
+2026-06-03 16:45:15 | INFO | Epoch 8/10 | train_loss=0.1392 ce=0.1869 kd=0.0464 feat=0.5062 | dev_loss=0.8320 dev_acc=0.9501 dev_f1_macro=0.8668 dev_f1_weighted=0.9487 | firing_rate=0.2978
+2026-06-03 16:52:40 | INFO | Epoch 9/10 | train_loss=0.1308 ce=0.1782 kd=0.0394 feat=0.4980 | dev_loss=0.8183 dev_acc=0.9520 dev_f1_macro=0.8713 dev_f1_weighted=0.9507 | firing_rate=0.2786
+2026-06-03 16:59:42 | INFO | Epoch 10/10 | train_loss=0.1210 ce=0.1598 kd=0.0338 feat=0.4943 | dev_loss=0.8346 dev_acc=0.9501 dev_f1_macro=0.8684 dev_f1_weighted=0.9486 | firing_rate=0.2822
+2026-06-03 16:59:42 | INFO | Loaded best student checkpoint: /datastore/cndt_phungdtm/KLTN_GRIT/Nhan/uit/uit-models/tier1_spikebert/seed_52/best_tier1_seed52.pt
+2026-06-03 16:59:42 | INFO | Student missing keys on reload: []
+2026-06-03 16:59:42 | INFO | Student unexpected keys on reload: []
+2026-06-03 17:00:21 | INFO | Saved detailed energy report to /datastore/cndt_phungdtm/KLTN_GRIT/Nhan/uit/uit-models/tier1_spikebert/seed_52/energy_report_seed52.json

@@ -1,0 +1,50 @@
+{
+  "builder_name": "parquet",
+  "citation": "",
+  "config_name": "20231101.vi",
+  "dataset_name": "wikipedia",
+  "dataset_size": 1617830227,
+  "description": "",
+  "download_size": 729557588,
+  "features": {
+    "id": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "url": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "title": {
+      "dtype": "string",
+      "_type": "Value"
+    },
+    "text": {
+      "dtype": "string",
+      "_type": "Value"
+    }
+  },
+  "homepage": "",
+  "license": "",
+  "size_in_bytes": 2347387815,
+  "splits": {
+    "train": {
+      "name": "train",
+      "num_bytes": 1617830227,
+      "num_examples": 1288680,
+      "shard_lengths": [
+        164000,
+        945510,
+        152000,
+        27170
+      ],
+      "dataset_name": "wikipedia"
+    }
+  },
+  "version": {
+    "version_str": "0.0.0",
+    "major": 0,
+    "minor": 0,
+    "patch": 0
+  }
+}

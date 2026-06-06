@@ -1,0 +1,112 @@
+{
+  "stage": "stage1_wiki_implicit",
+  "student_arch": "implicit_phobert_ffn",
+  "seed": 42,
+  "data_dir": "/datastore/cndt_phungdtm/KLTN_GRIT/Nhan/wiki_vi_20231101_segmented",
+  "dataset_size": 1288680,
+  "text_column": "text",
+  "segmentation_check": {
+    "samples": 1000.0,
+    "tokens": 2650967.0,
+    "underscore_tokens": 807741.0,
+    "underscore_ratio": 0.30469673896355554
+  },
+  "global_step": 30000,
+  "best_loss": 0.43010649508833887,
+  "model_name": "vinai/phobert-base-v2",
+  "spiking_layers": 4,
+  "implicit_convergence": {
+    "avg_anderson_steps": 3.0,
+    "skipped_pct": 0.0
+  },
+  "per_layer_stats": {
+    "8": {
+      "layer_index": 8.0,
+      "firing_rate": 0.7724867523951766,
+      "avg_anderson_steps": 3.0,
+      "skipped_steps": 0.0,
+      "num_forward_calls": 30000.0,
+      "last_relative_residual": 0.0,
+      "last_firing_rate_delta": 0.0,
+      "avg_relative_residual": 0.0,
+      "avg_firing_rate_delta": 0.0
+    },
+    "9": {
+      "layer_index": 9.0,
+      "firing_rate": 0.8624359079494374,
+      "avg_anderson_steps": 3.0,
+      "skipped_steps": 0.0,
+      "num_forward_calls": 30000.0,
+      "last_relative_residual": 0.0,
+      "last_firing_rate_delta": 0.0,
+      "avg_relative_residual": 0.0,
+      "avg_firing_rate_delta": 0.0
+    },
+    "10": {
+      "layer_index": 10.0,
+      "firing_rate": 0.9569779410773422,
+      "avg_anderson_steps": 3.0,
+      "skipped_steps": 0.0,
+      "num_forward_calls": 30000.0,
+      "last_relative_residual": 0.0,
+      "last_firing_rate_delta": 0.0,
+      "avg_relative_residual": 0.0,
+      "avg_firing_rate_delta": 0.0
+    },
+    "11": {
+      "layer_index": 11.0,
+      "firing_rate": 0.9659526774433908,
+      "avg_anderson_steps": 3.0,
+      "skipped_steps": 0.0,
+      "num_forward_calls": 30000.0,
+      "last_relative_residual": 0.0,
+      "last_firing_rate_delta": 0.0,
+      "avg_relative_residual": 0.0,
+      "avg_firing_rate_delta": 0.0
+    }
+  },
+  "student_mean_firing_rate": 0.8894633197163369,
+  "training_memory": {
+    "available": true,
+    "peak_memory_allocated_bytes": 3375289344,
+    "peak_memory_allocated_mb": 3218.9267578125
+  },
+  "best_checkpoint": "/datastore/cndt_phungdtm/KLTN_GRIT/Nhan/uit/uit-models/stage1_wiki_implicit/spk4/seed_42/best_stage1_wiki_implicit_seed42.pt",
+  "last_checkpoint": "/datastore/cndt_phungdtm/KLTN_GRIT/Nhan/uit/uit-models/stage1_wiki_implicit/spk4/seed_42/last_stage1_wiki_implicit_seed42.pt",
+  "config": {
+    "seed": 42,
+    "data_dir": "/datastore/cndt_phungdtm/KLTN_GRIT/Nhan/wiki_vi_20231101_segmented",
+    "output_dir": "/datastore/cndt_phungdtm/KLTN_GRIT/Nhan/uit/uit-models/stage1_wiki_implicit/spk4/seed_42",
+    "model_name": "vinai/phobert-base-v2",
+    "epochs": 1,
+    "max_steps": 30000,
+    "batch_size": 4,
+    "eval_batch_size": 4,
+    "max_samples": 0,
+    "max_length": 128,
+    "num_workers": 2,
+    "lr": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.06,
+    "max_grad_norm": 1.0,
+    "spiking_layers": 4,
+    "anderson_max_iter": 30,
+    "anderson_tol": 0.001,
+    "anderson_m": 5,
+    "neumann_k": 5,
+    "threshold": 0.5,
+    "surrogate_alpha": 2.0,
+    "equilibrium_metric": "both",
+    "firing_rate_tol": 0.0001,
+    "min_equilibrium_iter": 3,
+    "lambda_embedding": 0.2,
+    "lambda_hidden": 1.0,
+    "lambda_last": 1.0,
+    "save_every_steps": 500,
+    "log_every_steps": 1000,
+    "local_files_only": false,
+    "amp": true,
+    "resume": ""
+  },
+  "note": "This is Stage-1 Wiki representation KD for implicit PhoBERT-SNN. Teacher is pretrained PhoBERT and is frozen. Student is implicit spiking PhoBERT with selected FFN layers replaced by ImplicitSNNFFN. This checkpoint is intended for Tier 2/Tier 3 two-stage training."
+}

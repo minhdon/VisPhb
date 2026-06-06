@@ -1,0 +1,84 @@
+{
+  "config": {
+    "lr": 2e-05,
+    "batch_size": 16,
+    "max_len": 256,
+    "dropout": 0.25,
+    "epochs": 5,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1
+  },
+  "summary": {
+    "config": {
+      "lr": 2e-05,
+      "batch_size": 16,
+      "max_len": 256,
+      "dropout": 0.25,
+      "epochs": 5,
+      "weight_decay": 0.01,
+      "warmup_ratio": 0.1
+    },
+    "dev_f1_weighted_mean": 0.9515931108223429,
+    "dev_f1_weighted_std": 0.0017743729138246375,
+    "seed_runs": [
+      {
+        "seed": 42,
+        "best_dev_f1_weighted": 0.9493531620333596,
+        "test_metrics": {
+          "accuracy": 0.9403032217308908,
+          "f1_weighted": 0.9371215945317007,
+          "f1_macro": 0.8302717229322196,
+          "f1_micro": 0.9403032217308908,
+          "f1_negative": 0.9563089828731213,
+          "f1_neutral": 0.5765124555160143,
+          "f1_positive": 0.9579937304075236,
+          "f1_per_class": {
+            "negative": 0.9563089828731213,
+            "neutral": 0.5765124555160143,
+            "positive": 0.9579937304075236
+          },
+          "loss": 0.28284234711618134
+        }
+      },
+      {
+        "seed": 52,
+        "best_dev_f1_weighted": 0.9536926621270468,
+        "test_metrics": {
+          "accuracy": 0.9387239418825016,
+          "f1_weighted": 0.9360216255543334,
+          "f1_macro": 0.8315360797772858,
+          "f1_micro": 0.9387239418825016,
+          "f1_negative": 0.9552447552447553,
+          "f1_neutral": 0.5833333333333334,
+          "f1_positive": 0.9560301507537688,
+          "f1_per_class": {
+            "negative": 0.9552447552447553,
+            "neutral": 0.5833333333333334,
+            "positive": 0.9560301507537688
+          },
+          "loss": 0.23204271721117425
+        }
+      },
+      {
+        "seed": 62,
+        "best_dev_f1_weighted": 0.9517335083066221,
+        "test_metrics": {
+          "accuracy": 0.9406190777005685,
+          "f1_weighted": 0.9381531505020257,
+          "f1_macro": 0.8406379596999565,
+          "f1_micro": 0.9406190777005685,
+          "f1_negative": 0.9560669456066946,
+          "f1_neutral": 0.6089965397923875,
+          "f1_positive": 0.9568503937007874,
+          "f1_per_class": {
+            "negative": 0.9560669456066946,
+            "neutral": 0.6089965397923875,
+            "positive": 0.9568503937007874
+          },
+          "loss": 0.25492193928985585
+        }
+      }
+    ]
+  },
+  "best_seed": 52
+}

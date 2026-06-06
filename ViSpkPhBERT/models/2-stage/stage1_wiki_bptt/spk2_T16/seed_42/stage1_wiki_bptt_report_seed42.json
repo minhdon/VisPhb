@@ -1,0 +1,79 @@
+{
+  "stage": "stage1_wiki_bptt",
+  "student_arch": "spikebert_bptt_phobert_ffn",
+  "seed": 42,
+  "data_dir": "/datastore/cndt_phungdtm/KLTN_GRIT/Nhan/wiki_vi_20231101_segmented",
+  "dataset_size": 1288680,
+  "text_column": "text",
+  "segmentation_check": {
+    "samples": 1000.0,
+    "tokens": 2650967.0,
+    "underscore_tokens": 807741.0,
+    "underscore_ratio": 0.30469673896355554
+  },
+  "global_step": 30000,
+  "best_loss": 0.2627797251832982,
+  "model_name": "vinai/phobert-base-v2",
+  "spiking_layers": 2,
+  "spike_timesteps": 16,
+  "student_mean_firing_rate": 0.05244672584533691,
+  "per_layer_stats": {
+    "10": {
+      "layer_index": 10.0,
+      "spike_timesteps": 16.0,
+      "firing_rate": 0.07358175557454427,
+      "last_firing_rate": 0.111083984375,
+      "num_forward_calls": 30000.0,
+      "beta": 0.9422228336334229,
+      "threshold": 1.0
+    },
+    "11": {
+      "layer_index": 11.0,
+      "spike_timesteps": 16.0,
+      "firing_rate": 0.03131169611612956,
+      "last_firing_rate": 0.038818359375,
+      "num_forward_calls": 30000.0,
+      "beta": 0.8725162148475647,
+      "threshold": 1.0
+    }
+  },
+  "training_memory": {
+    "available": true,
+    "peak_memory_allocated_bytes": 3376752640,
+    "peak_memory_allocated_mb": 3220.322265625
+  },
+  "best_checkpoint": "/datastore/cndt_phungdtm/KLTN_GRIT/Nhan/uit/uit-models/stage1_wiki_bptt/spk2_T16/seed_42/best_stage1_wiki_bptt_seed42.pt",
+  "last_checkpoint": "/datastore/cndt_phungdtm/KLTN_GRIT/Nhan/uit/uit-models/stage1_wiki_bptt/spk2_T16/seed_42/last_stage1_wiki_bptt_seed42.pt",
+  "config": {
+    "seed": 42,
+    "data_dir": "/datastore/cndt_phungdtm/KLTN_GRIT/Nhan/wiki_vi_20231101_segmented",
+    "output_dir": "/datastore/cndt_phungdtm/KLTN_GRIT/Nhan/uit/uit-models/stage1_wiki_bptt/spk2_T16/seed_42",
+    "model_name": "vinai/phobert-base-v2",
+    "epochs": 1,
+    "max_steps": 30000,
+    "batch_size": 4,
+    "eval_batch_size": 4,
+    "max_samples": 0,
+    "max_length": 128,
+    "num_workers": 2,
+    "lr": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.06,
+    "max_grad_norm": 1.0,
+    "spiking_layers": 2,
+    "spike_timesteps": 16,
+    "beta": 0.9,
+    "threshold": 1.0,
+    "surrogate_alpha": 2.0,
+    "reset_mode": "subtract",
+    "lambda_embedding": 0.2,
+    "lambda_hidden": 1.0,
+    "lambda_last": 1.0,
+    "save_every_steps": 500,
+    "log_every_steps": 1000,
+    "local_files_only": false,
+    "amp": true,
+    "resume": ""
+  },
+  "note": "This is Stage-1 Wiki representation KD for Tier-1 BPTT SpikeBERTStudent. Teacher is pretrained PhoBERT and is frozen. Student is PhoBERT with selected FFN layers replaced by BPTT spiking FFN modules. This checkpoint is intended for tier1_spikebert_2stage.py only."
+}
